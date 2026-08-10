@@ -1,5 +1,6 @@
 
 import './App.css'
+import NavBar from './HomePage/NavBar/NavBar'
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
    
-      <h1 className='text-amber-900 bg-amber-400 text-9xl'>Hello React</h1>
+   <NavBar></NavBar>
 
  
    
