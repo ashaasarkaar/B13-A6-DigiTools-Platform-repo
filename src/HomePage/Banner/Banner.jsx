@@ -8,7 +8,7 @@ const Banner = () => {
        <div>
 
             {/* Banner Section START */}
-            <div className='w-11/12 lg:w-10/12 mx-auto flex flex-col-reverse md:flex-row justify-between items-center mt-15 mb-20'>
+            <div className='w-11/12 lg:w-10/12 mx-auto flex flex-col-reverse md:flex-row justify-between items-center mt-15'>
 
                 {/* left side Text Content START */}
                 <div className='w-full md:w-1/2 text-center md:text-left space-y-5'>
