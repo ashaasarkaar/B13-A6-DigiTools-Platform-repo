@@ -1,9 +1,9 @@
-import React from 'react';
-import toolKit from '../../assets/products/design-tool.png'
+import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 
 const Product = ({cartProduct}) => {
     const{name, description, price, period, tag, category, features, icon} = cartProduct;
+    const[addBtn, setAddBtn] = useState('Buy Now')
     return (
         <div>
 
@@ -44,7 +44,12 @@ const Product = ({cartProduct}) => {
                 </div>
                 {/* features END */}
 
-                <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full w-full text-white mt-3 py-6 font-bold'>Buy Now</button>
+                <button onClick={() =>setAddBtn('Add to Cart')}
+                 className={`btn  rounded-full w-full text-white mt-3 py-6 font-bold
+                ${addBtn === 'Buy Now'
+                    ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'
+                    : 'bg-green-600'
+                }`}>{addBtn}</button>
                 
             </div>
 
