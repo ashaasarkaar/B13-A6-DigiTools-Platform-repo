@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 
 const Tools = () => {
     const[active, setActive] = useState('Products')
+
     return (
+
         <div>
 
             {/* Tools Section START */}
-            <div className='mt-20 mb-80 text-center space-y-4'>
+            <div className='mt-20 text-center space-y-4'>
 
                 <h1 className='font-extrabold text-5xl'>Premium Digital Tools</h1>
                 <p className='text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
@@ -38,6 +40,7 @@ const Tools = () => {
             {/* Tools Section END */}
 
         </div>
+
     );
 };
 

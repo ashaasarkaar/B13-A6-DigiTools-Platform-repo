@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional, ATS-friendly resumes with modern templates.",
+    "price": 19.99,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "category": "Career",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Custom sections"
+    ],
+    "icon": "https://i.ibb.co.com/bjkJJ3dt/resume-final.png"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Starter",
+    "description": "Build a beautiful developer portfolio without starting from scratch.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "category": "Development",
+    "features": [
+      "25+ portfolio templates",
+      "Responsive design",
+      "Project showcase",
+      "Contact form"
+    ],
+    "icon": "https://i.ibb.co.com/RTYpSbcX/portfulio.png"
+  },
+  {
+    "id": 3,
+    "name": "UI Design Kit",
+    "description": "A complete collection of reusable UI components for modern web projects.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "category": "Design",
+    "features": [
+      "500+ UI components",
+      "Figma files",
+      "Design tokens",
+      "Dark mode support"
+    ],
+    "icon": "https://i.ibb.co.com/r2hXd5cS/design-tool.png"
+  },
+  {
+    "id": 4,
+    "name": "Developer Pro",
+    "description": "Everything developers need to build, manage, and launch projects faster.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "category": "Development",
+    "features": [
+      "Unlimited projects",
+      "GitHub integration",
+      "Cloud storage",
+      "Priority support"
+    ],
+    "icon": "https://i.ibb.co.com/KcDv8cX0/developer.png"
+  },
+  {
+    "id": 5,
+    "name": "Team Workspace",
+    "description": "Collaborate with your team and manage projects from one powerful workspace.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "category": "Productivity",
+    "features": [
+      "Unlimited team members",
+      "Project management",
+      "Team analytics",
+      "Real-time collaboration"
+    ],
+    "icon": "https://i.ibb.co.com/9k8C1rps/team-workspace.png"
+  },
+  {
+    "id": 6,
+    "name": "SEO Toolkit",
+    "description": "Improve your website visibility with powerful SEO research and optimization tools.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "category": "Marketing",
+    "features": [
+      "Keyword research",
+      "SEO audit",
+      "Backlink analysis",
+      "Competitor tracking"
+    ],
+    "icon": "https://i.ibb.co.com/F4GTTYF2/seo.png"
+  },
+  {
+    "id": 7,
+    "name": "AI Content Assistant",
+    "description": "Generate high-quality content, ideas, and marketing copy with AI.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "category": "AI Tools",
+    "features": [
+      "AI writing assistant",
+      "50+ content templates",
+      "Grammar correction",
+      "Content ideas"
+    ],
+    "icon": "https://i.ibb.co.com/hJ2fwpjd/ai-writing.png"
+  },
+  {
+    "id": 8,
+    "name": "Marketing Mastery",
+    "description": "Learn modern digital marketing strategies and grow your online business.",
+    "price": 79.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "category": "Marketing",
+    "features": [
+      "100+ video lessons",
+      "Marketing templates",
+      "SEO strategies",
+      "Social media guides"
+    ],
+    "icon": "https://i.ibb.co.com/qMs11PD0/marketing-mystry.png"
+  },
+  {
+    "id": 9,
+    "name": "Cloud Storage Plus",
+    "description": "Securely store, organize, and access your important files from anywhere.",
+    "price": 6.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "category": "Cloud Services",
+    "features": [
+      "500 GB cloud storage",
+      "Automatic backup",
+      "File sharing",
+      "Cross-device access"
+    ],
+    "icon": "https://i.ibb.co.com/pv9w3THr/cloud-storage.png"
+  }
+]
