@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 
-const Product = ({cartProduct}) => {
-    const{name, description, price, period, tag, category, features, icon} = cartProduct;
+const Product = ({cartProduct, setCartCount, cartCount}) => {
+    const{name, description, price, period, tag, features, icon} = cartProduct;
     const[addBtn, setAddBtn] = useState('Buy Now')
+
+  {/*Handle For Buy Now Button START*/}
+    const handleAddBtn = () =>{
+        setAddBtn('Add to Cart')
+        setCartCount(cartCount + 1)
+    }
+  {/*Handle For Buy Now Button END*/}
+
     return (
         <div>
 
@@ -44,7 +52,7 @@ const Product = ({cartProduct}) => {
                 </div>
                 {/* features END */}
 
-                <button onClick={() =>setAddBtn('Add to Cart')}
+                <button onClick={handleAddBtn}
                  className={`btn  rounded-full w-full text-white mt-3 py-6 font-bold
                 ${addBtn === 'Buy Now'
                     ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'

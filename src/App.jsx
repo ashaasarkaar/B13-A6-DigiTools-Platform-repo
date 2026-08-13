@@ -6,7 +6,7 @@ import NavBar from './HomePage/NavBar/NavBar'
 import Products from './HomePage/Products/Products'
 import Rating from './HomePage/Rating/Rating'
 import Tools from './HomePage/Tools/Tools'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 
 function App() {
 
@@ -14,21 +14,25 @@ function App() {
     const cartDataPromise = axios.get('data.json')
   {/*Card Data Fetch END*/}
 
+  {/*Cart Count State START*/}
+  const[cartCount, setCartCount] = useState(0)
+  {/*Cart Count State END*/}
+
   return (
     <>
    
    <header>
-      <NavBar></NavBar>
+      <NavBar cartCount={cartCount}></NavBar>
    </header>
 
    <main>
       <Banner></Banner>
       <Rating></Rating>
-      <Tools></Tools>
+      <Tools cartCount={cartCount}></Tools>
       
 
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-          <Products cartDataPromise={cartDataPromise} ></Products>
+          <Products cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise} ></Products>
       </Suspense>
    </main>
 
