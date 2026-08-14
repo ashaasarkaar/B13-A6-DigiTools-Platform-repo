@@ -16,7 +16,12 @@ const SelectedCart = ({ toggleCart,setToggleCart, cartCount, setCartCount}) => {
         setCartCount(cartCount-1)
     }
 
-   
+{/*Cart Empty after clicking Proceed Button START*/}
+    const handleProceedBtn = () =>{
+           setToggleCart([])
+           setCartCount(0)
+    }
+{/*Cart Empty after clicking Proceed Button END*/}
 
     return (
 
@@ -50,7 +55,8 @@ const SelectedCart = ({ toggleCart,setToggleCart, cartCount, setCartCount}) => {
             {/* total count section END */}
 
             {/* proceed button START */}
-            <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full w-full py-7 mt-4'>
+            <button onClick={handleProceedBtn}
+             className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white    rounded-full w-full py-7 mt-4'>
                 Proceed to Checkout
             </button>
             {/* proceed button END*/}
