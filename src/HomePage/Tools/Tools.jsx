@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-const Tools = () => {
-    const[active, setActive] = useState('Products')
+const Tools = ({cartCount, toggleCart, setToggleCart,active,setActive}) => {
 
     return (
 
@@ -32,7 +31,7 @@ const Tools = () => {
                             : 'text-black'
                         }
                     `}>
-                        Cart (2)
+                        Cart ({cartCount})
                     </button>
                 </div>
 

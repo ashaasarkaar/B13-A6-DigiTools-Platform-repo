@@ -18,6 +18,16 @@ function App() {
   const[cartCount, setCartCount] = useState(0)
   {/*Cart Count State END*/}
 
+  {/* product and cart toggle state START*/}
+     const[active, setActive] = useState('Products')
+      {/* product and cart toggle state END*/}
+
+      {/*Toggoling Cart State START*/}
+    const[toggleCart, setToggleCart] = useState([])
+    {/*Toggoling Cart State END*/}
+
+
+
   return (
     <>
    
@@ -28,11 +38,11 @@ function App() {
    <main>
       <Banner></Banner>
       <Rating></Rating>
-      <Tools cartCount={cartCount}></Tools>
+      <Tools active={active} setActive={setActive} cartCount={cartCount} toggleCart={toggleCart} setToggleCart={setToggleCart}></Tools>
       
 
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-          <Products cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise} ></Products>
+          <Products active={active} setActive={setActive} toggleCart={toggleCart} setToggleCart={setToggleCart} cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise} ></Products>
       </Suspense>
    </main>
 

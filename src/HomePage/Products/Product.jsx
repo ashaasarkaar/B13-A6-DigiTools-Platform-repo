@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
 
-const Product = ({cartProduct, setCartCount, cartCount}) => {
+const Product = ({cartProduct, setCartCount, cartCount, setToggleCart, toggleCart}) => {
     const{name, description, price, period, tag, features, icon} = cartProduct;
     const[addBtn, setAddBtn] = useState('Buy Now')
 
@@ -9,6 +9,9 @@ const Product = ({cartProduct, setCartCount, cartCount}) => {
     const handleAddBtn = () =>{
         setAddBtn('Add to Cart')
         setCartCount(cartCount + 1)
+        setToggleCart([...toggleCart, cartProduct])
+         console.log("Cart Product:", cartProduct)
+        
     }
   {/*Handle For Buy Now Button END*/}
 
