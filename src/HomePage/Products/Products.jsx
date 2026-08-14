@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import Product from './Product';
 import SelectedCart from '../Cart/SelectedCart';
 
-const Products = ({ cartDataPromise, cartCount, setCartCount, toggleCart, setToggleCart,active,setActive }) => {
+const Products = ({ cartDataPromise, cartCount, setCartCount, toggleCart, setToggleCart,active}) => {
     const cartDataRes = use(cartDataPromise)
     const cartData = cartDataRes.data;
     // console.log(cartData)

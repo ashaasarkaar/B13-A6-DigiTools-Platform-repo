@@ -11,6 +11,7 @@ const Product = ({cartProduct, setCartCount, cartCount, setToggleCart, toggleCar
         setCartCount(cartCount + 1)
         setToggleCart([...toggleCart, cartProduct])
          console.log("Cart Product:", cartProduct)
+
         
     }
   {/*Handle For Buy Now Button END*/}

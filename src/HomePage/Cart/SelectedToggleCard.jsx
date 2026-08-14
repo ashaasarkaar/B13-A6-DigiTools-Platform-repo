@@ -1,10 +1,12 @@
 import React from 'react';
+import { MdDelete } from 'react-icons/md';
 
 
 const SelectedToggleCard = ({selectedToggleCard}) => {
     return (
         <div>
-
+            
+            {/* SELECTED CARD SECTION START */}
            <div className='flex justify-between items-center border-2 border-gray-400 rounded-2xl py-5 px-3 shadow-xl mb-4 '>
 
             {/* left side START */}
@@ -26,13 +28,17 @@ const SelectedToggleCard = ({selectedToggleCard}) => {
              </div>
               {/* left side END */}
 
-             {/* <button
-                onClick={()=>handleDeleteSelectedPlayer(selectedPlayer)}
-              className='btn'>
-                <MdDelete  color="red" ></MdDelete>
-             </button> */}
+              {/* right side START */}
+           
+                 <button
+              className='btn rounded-full'>
+                <MdDelete color="red" ></MdDelete>
+             </button>
+           
+             {/* right side END */}
 
            </div>
+            {/* SELECTED CARD SECTION END */}
             
         </div>
     );

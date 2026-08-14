@@ -26,6 +26,7 @@ function App() {
     const[toggleCart, setToggleCart] = useState([])
     {/*Toggoling Cart State END*/}
 
+    
 
 
   return (
@@ -42,7 +43,7 @@ function App() {
       
 
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-          <Products active={active} setActive={setActive} toggleCart={toggleCart} setToggleCart={setToggleCart} cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise} ></Products>
+          <Products  active={active} setActive={setActive} toggleCart={toggleCart} setToggleCart={setToggleCart} cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise}></Products>
       </Suspense>
    </main>
 
