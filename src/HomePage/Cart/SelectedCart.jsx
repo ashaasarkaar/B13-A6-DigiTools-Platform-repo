@@ -1,7 +1,9 @@
 
+import SelectedCartEmpty from '../EmptySelectedCart/SelectedCartEmpty';
 import SelectedToggleCard from './SelectedToggleCard';
 
-const SelectedCart = ({ toggleCart}) => {
+const SelectedCart = ({ toggleCart }) => {
+    console.log(SelectedCart)
 
     const totalPrice = toggleCart.reduce(
         (total, item) => total + Number(item.price),
@@ -11,7 +13,12 @@ const SelectedCart = ({ toggleCart}) => {
    
 
     return (
-        <div className='w-10/12 mx-auto border-1 border-gray-500 p-10 rounded-2xl shadow-2xl mt-10 mb-50'>
+        
+       <div>
+            {
+                toggleCart.length === 0
+                ? <SelectedCartEmpty></SelectedCartEmpty>
+                :  <div className='w-10/12 mx-auto border-1 border-gray-500 p-10 rounded-2xl shadow-2xl mt-10 mb-50'>
 
               {/* heading START */}
           <div>
@@ -19,9 +26,14 @@ const SelectedCart = ({ toggleCart}) => {
           </div>
            {/* heading END */}
 
-            {
-                toggleCart.map((selectedToggleCard, index) => <SelectedToggleCard key={index} selectedToggleCard={selectedToggleCard}></SelectedToggleCard>)
+            
+
+            { 
+                 toggleCart.map((selectedToggleCard, index) => <SelectedToggleCard key={index} selectedToggleCard={selectedToggleCard}></SelectedToggleCard>)
+            
             }
+
+
 
             {/* total count section START */}
             <div className='flex justify-between items-center mt-2'>
@@ -41,6 +53,8 @@ const SelectedCart = ({ toggleCart}) => {
 
  
         </div>
+            }
+       </div>
     );
 };
 
