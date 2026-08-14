@@ -2,10 +2,10 @@ import React from 'react';
 import { MdDelete } from 'react-icons/md';
 
 
-const SelectedToggleCard = ({selectedToggleCard}) => {
+const SelectedToggleCard = ({selectedToggleCard, handleDeleteCartBtn}) => {
     return (
         <div>
-            
+
             {/* SELECTED CARD SECTION START */}
            <div className='flex justify-between items-center border-2 border-gray-400 rounded-2xl py-5 px-3 shadow-xl mb-4 '>
 
@@ -30,7 +30,7 @@ const SelectedToggleCard = ({selectedToggleCard}) => {
 
               {/* right side START */}
            
-                 <button
+                 <button onClick={() => handleDeleteCartBtn(selectedToggleCard)}
               className='btn rounded-full'>
                 <MdDelete color="red" ></MdDelete>
              </button>

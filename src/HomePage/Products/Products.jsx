@@ -18,7 +18,7 @@ const Products = ({ cartDataPromise, cartCount, setCartCount, toggleCart, setTog
                 }
             </div>
 
-            : <SelectedCart toggleCart={toggleCart} setToggleCart={setToggleCart}></SelectedCart>
+            : <SelectedCart cartCount={cartCount} setCartCount={setCartCount} toggleCart={toggleCart} setToggleCart={setToggleCart}></SelectedCart>
 
 
                 

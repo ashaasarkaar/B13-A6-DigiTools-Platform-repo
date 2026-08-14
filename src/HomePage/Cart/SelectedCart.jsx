@@ -2,7 +2,7 @@
 import SelectedCartEmpty from '../EmptySelectedCart/SelectedCartEmpty';
 import SelectedToggleCard from './SelectedToggleCard';
 
-const SelectedCart = ({ toggleCart }) => {
+const SelectedCart = ({ toggleCart,setToggleCart, cartCount, setCartCount}) => {
     console.log(SelectedCart)
 
     const totalPrice = toggleCart.reduce(
@@ -10,10 +10,16 @@ const SelectedCart = ({ toggleCart }) => {
         0
     );
 
+    const handleDeleteCartBtn = (selectedToggleCard)=>{
+        const filterDeleteCard =  toggleCart.filter(filterCard => filterCard.name !== selectedToggleCard.name)
+        setToggleCart(filterDeleteCard);
+        setCartCount(cartCount-1)
+    }
+
    
 
     return (
-        
+
        <div>
             {
                 toggleCart.length === 0
@@ -29,7 +35,7 @@ const SelectedCart = ({ toggleCart }) => {
             
 
             { 
-                 toggleCart.map((selectedToggleCard, index) => <SelectedToggleCard key={index} selectedToggleCard={selectedToggleCard}></SelectedToggleCard>)
+                 toggleCart.map((selectedToggleCard, index) => <SelectedToggleCard key={index} handleDeleteCartBtn={handleDeleteCartBtn} selectedToggleCard={selectedToggleCard}></SelectedToggleCard>)
             
             }
 
