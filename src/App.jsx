@@ -10,6 +10,7 @@ import { Suspense, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import StepSection from './HomePage/StepSection/StepSection'
 import PricingSection from './HomePage/PricingSection/PricingSection'
+import WorkFlow from './HomePage/WorkFlow/WorkFlow'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
 
       <StepSection></StepSection>
       <PricingSection></PricingSection>
+      <WorkFlow></WorkFlow>
    </main>
 
  

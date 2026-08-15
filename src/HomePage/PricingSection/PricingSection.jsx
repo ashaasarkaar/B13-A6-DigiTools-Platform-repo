@@ -5,7 +5,7 @@ const PricingSection = () => {
     return (
         <div>
 
-            <div className='w-10/12 mx-auto mb-40'>
+            <div className='w-10/12 mx-auto mb-20'>
 
                 {/* text content section START */}
                 <div className='text-center space-y-3'>
