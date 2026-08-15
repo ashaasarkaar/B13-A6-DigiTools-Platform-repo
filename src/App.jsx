@@ -8,6 +8,7 @@ import Rating from './HomePage/Rating/Rating'
 import Tools from './HomePage/Tools/Tools'
 import { Suspense, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
+import StepSection from './HomePage/StepSection/StepSection'
 
 function App() {
 
@@ -50,6 +51,8 @@ function App() {
       <ToastContainer position='top-left' containerId='top-left'></ToastContainer>
       <ToastContainer position='top-center' containerId='top-center'></ToastContainer>
       <ToastContainer position='top-right' containerId='top-right'></ToastContainer>
+
+      <StepSection></StepSection>
    </main>
 
  
