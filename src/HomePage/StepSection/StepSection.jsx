@@ -4,7 +4,7 @@ import packageProductImg from '../../assets/products/package.png'
 
 const StepSection = () => {
     return (
-        <div className='bg-[#F1F3F7] p-20 mb-40'>
+        <div className='bg-[#F1F3F7] p-20 mb-20'>
 
             {/* Step Section START */}
             <div className='w-10/12 mx-auto'>
@@ -17,7 +17,7 @@ const StepSection = () => {
                 {/* text Content END */}
 
                 {/* Cards Container START */}
-                <div className='grid grid-cols-3 mt-7 gap-15'>
+                <div className='grid grid-cols-1 md:grid-cols-3 mt-7 gap-15'>
 
                     {/* 1st card Create Account START */}
                     <div className='bg-base-200 shadow-2xl py-4 px-5 rounded-xl'>
