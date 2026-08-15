@@ -7,6 +7,7 @@ import Products from './HomePage/Products/Products'
 import Rating from './HomePage/Rating/Rating'
 import Tools from './HomePage/Tools/Tools'
 import { Suspense, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
           <Products  active={active} setActive={setActive} toggleCart={toggleCart} setToggleCart={setToggleCart} cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise}></Products>
       </Suspense>
+
+      <ToastContainer position='top-left' containerId='top-left'></ToastContainer>
+      <ToastContainer position='top-center' containerId='top-center'></ToastContainer>
+      <ToastContainer position='top-right' containerId='top-right'></ToastContainer>
    </main>
 
  

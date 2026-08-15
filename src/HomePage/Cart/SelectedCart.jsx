@@ -1,4 +1,5 @@
 
+import { toast } from 'react-toastify';
 import SelectedCartEmpty from '../EmptySelectedCart/SelectedCartEmpty';
 import SelectedToggleCard from './SelectedToggleCard';
 
@@ -13,13 +14,19 @@ const SelectedCart = ({ toggleCart,setToggleCart, cartCount, setCartCount}) => {
     const handleDeleteCartBtn = (selectedToggleCard)=>{
         const filterDeleteCard =  toggleCart.filter(filterCard => filterCard.name !== selectedToggleCard.name)
         setToggleCart(filterDeleteCard);
-        setCartCount(cartCount-1)
+        setCartCount(cartCount-1);
+        toast.error(`${selectedToggleCard.name} removed from cart successfully!`,{
+             containerId:'top-left'
+        });
     }
 
 {/*Cart Empty after clicking Proceed Button START*/}
     const handleProceedBtn = () =>{
            setToggleCart([])
            setCartCount(0)
+           toast.info(`Your total is ready! Proceeding to checkout.`,{
+            containerId: 'top-right'
+           })
     }
 {/*Cart Empty after clicking Proceed Button END*/}
 

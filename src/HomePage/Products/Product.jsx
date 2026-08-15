@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Product = ({cartProduct, setCartCount, cartCount, setToggleCart, toggleCart}) => {
     const{name, description, price, period, tag, features, icon} = cartProduct;
@@ -11,6 +12,9 @@ const Product = ({cartProduct, setCartCount, cartCount, setToggleCart, toggleCar
         setCartCount(cartCount + 1)
         setToggleCart([...toggleCart, cartProduct])
          console.log("Cart Product:", cartProduct)
+        toast.success(`${cartProduct.name} added to cart successfully!`,{
+            containerId:'top-center'
+        });
 
         
     }
