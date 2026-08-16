@@ -4,7 +4,7 @@ const WorkFlow = () => {
     return (
         <div>
             {/* workflow section START */}
-            <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-40 p-30'>
+            <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA]  p-30'>
 
                 {/* text START */}
                 <div className='text-center space-y-5'>

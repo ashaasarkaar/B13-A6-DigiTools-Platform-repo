@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify'
 import StepSection from './HomePage/StepSection/StepSection'
 import PricingSection from './HomePage/PricingSection/PricingSection'
 import WorkFlow from './HomePage/WorkFlow/WorkFlow'
+import Footer from './HomePage/Footer/Footer'
 
 function App() {
 
@@ -58,6 +59,8 @@ function App() {
       <PricingSection></PricingSection>
       <WorkFlow></WorkFlow>
    </main>
+
+   <Footer></Footer>
 
  
    
