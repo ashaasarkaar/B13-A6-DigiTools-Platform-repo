@@ -54,15 +54,15 @@ const Footer = () => {
                         {/* media icons START */}
                         <div className='flex justify-center md:justify-start items-center  gap-3'>
                              <div className='w-10 h-10 rounded-full bg-white flex justify-center items-center'>
-                                <RiInstagramFill color='#E4405F' size={20}/>
+                               <a href="https://www.instagram.com/"  target="_blank"> <RiInstagramFill color='#E4405F' size={20}/></a>
                             </div>
 
                             <div className='w-10 h-10 rounded-full bg-white flex justify-center items-center'>
-                                <FaFacebook color='blue' size={20}/>
+                               <a href="https://www.facebook.com/"  target="_blank"> <FaFacebook color='blue' size={20}/></a>
                             </div>
 
                              <div className='w-10 h-10 rounded-full bg-white flex justify-center items-center'>
-                               <FaSquareXTwitter color='#000000' size={20} />
+                              <a href="https://x.com/"  target="_blank"> <FaSquareXTwitter color='#000000' size={20} /></a>
                             </div>
 
                         </div>

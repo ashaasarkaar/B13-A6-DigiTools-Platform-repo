@@ -60,7 +60,9 @@ function App() {
       <WorkFlow></WorkFlow>
    </main>
 
-   <Footer></Footer>
+   <footer>
+    <Footer></Footer>
+   </footer>
 
  
    
