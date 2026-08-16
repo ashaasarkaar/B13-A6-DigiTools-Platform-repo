@@ -7,4 +7,5 @@ export default defineConfig({
   plugins: [react(),
             tailwindcss()
   ],
+   base: '/B13-A6-DigiTools-Platform-repo/',
 })
