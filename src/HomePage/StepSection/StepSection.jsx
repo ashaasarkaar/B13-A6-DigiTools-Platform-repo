@@ -1,6 +1,7 @@
 import React from 'react';
 import userIcon from '../../assets/products/user.png'
 import packageProductImg from '../../assets/products/package.png'
+import rocketImg from '../../assets/products/rocket.png'
 
 const StepSection = () => {
     return (
@@ -70,13 +71,13 @@ const StepSection = () => {
                         {/* Padding wrapper div start to give different padding START */}
                         <div className='py-10'>
 
-                            {/* User Icon START */}
+                            {/* Product Package Icon START */}
                             <div className='flex justify-center mb-4'>
                                 <div className='bg-[#e1e7ff] rounded-full p-3 inline-flex justify-center items-center'>
                                     <img src={packageProductImg} alt="Image Of Package Product" />
                                 </div>
                             </div>
-                            {/* User Icon END */}
+                            {/* Product Package Icon END */}
 
                             <div className='text-center space-y-3 py-2'>
                                 <h3 className='font-bold text-2xl'>Choose Products</h3>
@@ -105,13 +106,13 @@ const StepSection = () => {
                         {/* Padding wrapper div start to give different padding START */}
                         <div className='py-10'>
 
-                            {/* User Icon START */}
+                            {/* Rocket Icon START */}
                             <div className='flex justify-center mb-4'>
                                 <div className='bg-[#e1e7ff] rounded-full p-3 inline-flex justify-center items-center'>
-                                    <img src={packageProductImg} alt="Image Of Package Product" />
+                                    <img src={rocketImg} alt="Image Of Package Product" />
                                 </div>
                             </div>
-                            {/* User Icon END */}
+                            {/* Rocket Icon END */}
 
                             <div className='text-center space-y-3 py-2'>
                                 <h3 className='font-bold text-2xl'>Start Creating</h3>
