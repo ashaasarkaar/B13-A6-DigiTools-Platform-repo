@@ -14,11 +14,13 @@ import WorkFlow from './HomePage/WorkFlow/WorkFlow'
 import Footer from './HomePage/Footer/Footer'
 import { Divide } from 'lucide-react'
 
-function App() {
-
-  {/*Card Data Fetch START*/}
+ {/*Card Data Fetch START*/}
     const cartDataPromise = axios.get('data.json')
   {/*Card Data Fetch END*/}
+
+function App() {
+
+ 
 
   {/*Cart Count State START*/}
   const[cartCount, setCartCount] = useState(0)
