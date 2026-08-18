@@ -12,6 +12,7 @@ import StepSection from './HomePage/StepSection/StepSection'
 import PricingSection from './HomePage/PricingSection/PricingSection'
 import WorkFlow from './HomePage/WorkFlow/WorkFlow'
 import Footer from './HomePage/Footer/Footer'
+import { Divide } from 'lucide-react'
 
 function App() {
 
@@ -47,7 +48,11 @@ function App() {
       <Tools active={active} setActive={setActive} cartCount={cartCount} toggleCart={toggleCart} setToggleCart={setToggleCart}></Tools>
       
 
-      <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+      <Suspense fallback={
+        <div className='flex justify-center items-center'>
+          <span className="loading loading-bars loading-xl"></span>
+        </div>
+      }>
           <Products  active={active} setActive={setActive} toggleCart={toggleCart} setToggleCart={setToggleCart} cartCount={cartCount} setCartCount={setCartCount}  cartDataPromise={cartDataPromise}></Products>
       </Suspense>
 
